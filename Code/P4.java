@@ -1,6 +1,5 @@
 package Code;
 
-
 public class P4 {
 
     public static void main(String[] args) {
@@ -12,8 +11,8 @@ public class P4 {
         int lastvalue = 0;
         String value;
         String revalue;
-        for(int i = 100; i < 1000; i++){
-            for(int n = 100; n < 1000; n++){
+        for(int i = 100; i < 100; i++){
+            for(int n = 100; n < 100; n++){
                 p = i*n;
                 value=String.valueOf(p);
                 revalue = reverse(p);
