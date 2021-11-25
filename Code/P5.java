@@ -7,7 +7,7 @@ public class P5 {
     }
     public long number(int x){
         int a = 2;
-        int num = 1;
+        long num = 1;
        while(a<=x){
             if(num%a==0){
                    a++;
