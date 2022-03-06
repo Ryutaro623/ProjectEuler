@@ -2,8 +2,11 @@ package Code;
 
 public class P5faster {
     public static void main(String[] args) {
+        long starttime = System.currentTimeMillis();
         P5faster p = new P5faster();
         p.findfactor(20);
+        long endtime = System.currentTimeMillis();
+        System.out.println(endtime-starttime+"ms");
     }
     public void findfactor(int x){
         
