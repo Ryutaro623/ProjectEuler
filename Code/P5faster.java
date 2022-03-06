@@ -26,7 +26,7 @@ public class P5faster {
                     }
                 }
                 
-                System.out.println("prime_number:"+primenumber+"**"+exp);
+                System.out.println("prime_number:"+primenumber+"^"+exp);
                 gg*=(long)Math.pow(primenumber, exp);
                 
 
