@@ -24,7 +24,7 @@ public class P2 {
 
            }
         }
-        System.out.println(sum);
+        System.out.println("total of even number: "+sum);
     }
     
 }
