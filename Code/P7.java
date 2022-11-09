@@ -13,16 +13,22 @@ public class P7 {
     public int nth_primenumber(int k){
         int i = 0;
         int ni = 2;
-        while(i<k){
+        boolean u = true;
+        while(u){
             if(largestprimenumber(ni)==ni){
                 i++;
-                
+                if(i>=k){
+                    u=false;
+
+
+                } else{
+                    ni++;
+                }
             }
-            ni++;
 
 
         }System.out.println(i);
-        return ni-1;
+        return ni;
     }
     public int largestprimenumber(int n){
         while (n!=smallestfactor(n)) {
