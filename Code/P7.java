@@ -7,51 +7,42 @@ package Code;
 public class P7 {
     public static void main(String[] args){
         P7 p = new P7();
-        System.out.println(p.nth_primenumber(10001));
+        System.out.println(p.getnthprime(10));
 
     }
-    public int nth_primenumber(int k){
-        int i = 0;
-        int ni = 2;
-        boolean u = true;
-        while(u){
-            if(largestprimenumber(ni)==ni){
+    public long getnthprime(int n){
+        int i=1;
+        int h=2;
+        while(i<=n){
+            if(largestprimenumber(h)==h){
                 i++;
-                if(i>=k){
-                    u=false;
-
-
-                } else{
-                    ni++;
-                }
             }
+            h++;
 
-
-        }System.out.println(i);
-        return ni;
+        }
+        return h-1;
     }
-    public int largestprimenumber(int n){
-        while (n!=smallestfactor(n)) {
-                n/=smallestfactor(n);
-            }
-            
 
-            
+
+    public long largestprimenumber(int c){
+        while(c!=smallestfactor(c)){
+            c/=smallestfactor(c);
+
+        }
+        return c;
         
-        return n;
 
     }
-    public int smallestfactor(long number){
-        boolean i=true;
+
+    public int smallestfactor(int k){
+        boolean i = true;
         int x = 2;
         while(i){
-            if(number%x==0){
+            if(k%x==0){
                 i = false;
-
-            } else{
+            } else {
                 x++;
             }
-            
         }
         return x;
 
